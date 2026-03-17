@@ -1,0 +1,32 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "00.welcome_to_web",
+      "cwd": "examples/00.welcome_to_web",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "01.existing_app_to_web",
+      "cwd": "examples/01.existing_app_to_web",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "02.web_deploy_example",
+      "cwd": "examples/02.web_deploy_example",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "03.adaptive_design",
+      "cwd": "examples/03.adaptive_design",
+      "request": "launch",
+      "type": "dart"
+    }
+  ]
+}
