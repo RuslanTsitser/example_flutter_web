@@ -55,7 +55,8 @@ void addVideoElement() {
     _addedVideo!.remove();
   }
   final video = web.HTMLVideoElement()
-    ..src = 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
+    ..src =
+        'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
     ..style.width = '320px'
     ..style.height = '180px'
     ..style.position = 'fixed'
@@ -78,10 +79,7 @@ void removeVideoElement() {
 }
 
 extension type JSPerson._(JSObject _) implements JSObject {
-  external JSPerson({
-    JSString? name,
-    JSNumber? age,
-  });
+  external JSPerson({JSString? name, JSNumber? age});
 
   external JSString? get name;
   external JSNumber? get age;
