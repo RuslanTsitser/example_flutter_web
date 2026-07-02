@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
-
 import 'package:web_deploy_example/features/admin_panel.dart' deferred as admin;
 
 void main() {
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Web Deploy Example'),
+      home: const MyHomePage(title: 'Привет Руслан'),
     );
   }
 }
@@ -44,11 +43,9 @@ class _MyHomePageState extends State<MyHomePage> {
   Future<void> _openAdminPanel() async {
     await admin.loadLibrary();
     if (!mounted) return;
-    Navigator.of(context).push(
-      MaterialPageRoute<void>(
-        builder: (context) => admin.AdminPanel(),
-      ),
-    );
+    Navigator.of(
+      context,
+    ).push(MaterialPageRoute<void>(builder: (context) => admin.AdminPanel()));
   }
 
   @override
